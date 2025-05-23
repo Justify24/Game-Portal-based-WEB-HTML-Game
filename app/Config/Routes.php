@@ -8,6 +8,7 @@ $routes->group('admin', function($routes) {
     // Auth routes (tidak perlu filter auth)
     $routes->get('login', 'AdminController::login');
     $routes->post('authenticate', 'AdminController::authenticate');
+    $routes->post('create', 'AdminController::createAdmin');
     $routes->get('register', 'AdminController::register');
     $routes->get('logout', 'AdminController::logout');
     
